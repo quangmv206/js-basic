@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+let product1 = {
+    ten: "   điện thoại iPhone 15 pro max   ", 
+    moTa: "Màn hình OLED 6.7 inch siêu nét, camera 48MP."
+};
+
+
+console.log("1. Ký tự đầu tiên:", product1.ten.trim().charAt(0));
+
+
+console.log("2. Mô tả in hoa:", product1.moTa.toUpperCase());
+
+
+console.log("3. Chứa từ 'iPhone':", product1.ten.includes("iPhone"));
+
+
+console.log("4. Vị trí từ 'màn':", product1.moTa.toLowerCase().indexOf("màn"));
+
+
+let thongTinSP = `Ten: ${product1.ten.trim()}\nChi tiet: ${product1.moTa}`;
+console.log("5. Thông tin sản phẩm:\n" + thongTinSP);
+
+
+let chuoiThietBi = "Laptop Dell, Smartphone Samsung, Tablet iPad";
+let mangThietBi = chuoiThietBi.split(", ");
+console.log("6. Mảng thiết bị:", mangThietBi);
+
+let maGiamGia = "SALE50%OFF";
+let maSauKhiCat = maGiamGia.replace("SALE", "");
+console.log("7. Mã giảm giá sau khi cắt:", maSauKhiCat);
+
+
+function chuanHoaChuoi(str) {
+
+    str = str.trim().replace(/\s+/g, ' ');
+    
+    let titleCaseStr = str.toLowerCase().split(' ').map(word => {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+    }).join(' ');
+    
+    return titleCaseStr;
+}
+
+console.log("8. Tên sản phẩm 1 sau khi chuẩn hóa:", chuanHoaChuoi(product1.ten));
+   </script>
+</body>
+</html>

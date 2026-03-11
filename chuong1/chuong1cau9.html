@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script> 
+let a = 5, b = -3, c = 6;
+
+let canBacHaiA = Math.sqrt(a).toFixed(2);
+console.log("Căn bậc hai của a:", canBacHaiA);
+
+
+let luyThua = Math.pow(a, c);
+console.log("a lũy thừa c:", luyThua);
+
+
+let triTuyetDoiA = Math.abs(a);
+console.log("Giá trị tuyệt đối của a:", triTuyetDoiA);
+
+let chuVi = 2 * Math.PI * a;
+let dienTich = Math.PI * Math.pow(a, 2);
+console.log("Chu vi hình tròn:", chuVi.toFixed(2));
+console.log("Diện tích hình tròn:", dienTich.toFixed(2));
+
+
+let maxVal = Math.max(a, b, c);
+let minVal = Math.min(a, b, c);
+console.log(`Max là: ${maxVal}, Min là: ${minVal}`);
+
+
+let chuViDinhDang = new Intl.NumberFormat('en-US', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+}).format(chuVi);
+console.log("Chu vi định dạng:", chuViDinhDang);
+
+
+let hoTen = prompt("Nhập vào họ tên của bạn:");
+let trongLuong = prompt("Nhập vào trọng lượng của bạn:");
+
+console.log("--- Thông tin người dùng ---");
+console.log("Họ tên:", hoTen);
+console.log("Trọng lượng:", trongLuong);</script>    
+</body>
+</html>
