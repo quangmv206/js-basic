@@ -66,6 +66,6 @@ const instocklist = product.filter((item,index) => {
 console.log("7.danh sách sản phẩm còn hàng: " , instocklist);
 
 for(const key in pr1){
-    console.log(  key,pr1["key"]);
+    console.log(  key,pr1[key]);
 }
 console.log("8.các thuộc tính của sản phẩm đầu tiên: " , pr1);
